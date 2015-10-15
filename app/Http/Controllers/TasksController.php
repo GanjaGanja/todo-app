@@ -7,6 +7,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Project;
 use App\Task;
+use Input;
+use Redirect;
 
 class TasksController extends Controller
 {
