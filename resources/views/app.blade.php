@@ -53,8 +53,16 @@
 		</div>
 	</nav>
 
-	@yield('content')
-
+	<div class="content">
+		@if (Session::has('message'))
+			<div class="flash alert-info">
+				<p>{{ Session::get('message') }}</p>
+			</div>
+		@endif
+			
+		@yield('content')
+	</div>
+	
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
