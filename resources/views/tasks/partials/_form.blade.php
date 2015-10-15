@@ -10,6 +10,7 @@
  
 <div class="form-group">
     {!! Form::label('completed', 'Completed:') !!}
+    {!! Form::hidden('completed', 0) !!}
     {!! Form::checkbox('completed') !!}
 </div>
  
